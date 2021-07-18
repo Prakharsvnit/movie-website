@@ -1,0 +1,58 @@
+.class1{
+    color:white;
+}
+
+.class2{
+    color:white !important;
+}
+
+.class3{
+    color:white !important;
+    background-color:red !important;
+}
+
+.class4{
+    margin-left:350px !important;
+    width:60%;
+    height: 800px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color:blue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:blue;
+}
+
+#data{
+  margin-top:50px;
+  margin-left: 400px;
+  display:grid;
+  grid-template-columns: repeat(3,20%);
+  gap:5%;
+}
+
+#button1{
+  margin-left:400px;
+  margin-top:50px;
+}
+
+#button2{
+  margin-left: 650px;
+}

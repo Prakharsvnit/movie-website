@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+    <link href = "style.css" rel="stylesheet" />
+  </head>
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="home.html">
+      <img
+        src="https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_800w.png?v=30"
+        height="46"
+        alt=""
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link class2" href="home.html">Home</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <button type="button" onclick="window.location.href='login_signup.html';" class="btn btn-primary me-3">
+          Login/Register
+        </button>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar --> 
+
+<!--carousel-->
+<div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="https://media.comicbook.com/2017/10/iron-man-movie-poster-marvel-cinematic-universe-1038878.jpg"
+        class="class4"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://media.comicbook.com/2017/10/thor-movie-poster-marvel-cinematic-universe-1038890.jpg"
+        class="class4"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://i.pinimg.com/736x/a7/21/08/a721082bae9c7427b89422de580c8044.jpg"
+        class="class4"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://static2.srcdn.com/wordpress/wp-content/uploads/2019/06/Captain-America-Civil-War.jpg?q=50&fit=crop&w=740&h=1096&dpr=1.5"
+        class="class4"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://m.media-amazon.com/images/I/71u9+g9J1pL._AC_SL1000_.jpg"
+        class="class4"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/d1pklzbuyaab0la-1552597012.jpg"
+        class="class4"
+        alt="..."
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#carouselExampleControls"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#carouselExampleControls"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--carousel-->
+
+<!--Sorting-->
+  <button type="button" id="button1" onclick="LtoH()" class="btn btn-primary">Low to High rating</button>
+  <button type="button" id="button2" onclick="HtoL()"class="btn btn-primary">Hight to Low rating</button> 
+<!--Sorting-->
+
+<!--movie cards-->
+<div id="data"></div>
+<!--movie cards-->
+
+</body>
+</html>
+<script type="text/javascript" src="home.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
